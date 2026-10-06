@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Quiz - SAM AI Internship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Quiz Header -->
+        <header class="quiz-header">
+            <h1>WebDev Master Quiz</h1>
+            <div id="stats-bar" class="stats-bar hide">
+                <span id="question-tracker">Question: 1/15</span>
+                <span id="timer">Time Left: <strong id="time">15</strong>s</span>
+            </div>
+        </header>
+
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen">
+            <p>Test your knowledge in HTML, CSS, and JavaScript! You have 15 questions, each with a 15-second timer.</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen hide">
+            <div id="question-container">
+                <h2 id="question-text">Question text goes here</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- Options will be injected via JS -->
+                </div>
+            </div>
+            <button id="next-btn" class="btn next-btn hide">Next Question</button>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen hide">
+            <h2>Quiz Completed! 🎉</h2>
+            <p id="score-display">Your Score: 0 / 15</p>
+            <div id="review-container" class="review-container">
+                <!-- Answer review list injected via JS -->
+            </div>
+            <button id="restart-btn" class="btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
